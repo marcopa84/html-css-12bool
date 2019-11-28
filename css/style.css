@@ -1,0 +1,46 @@
+.container{
+
+}
+
+[class*="col-"]{
+  height: 100%;
+  line-height: 200px;
+  vertical-align: middle;
+  text-align: center;
+  border: 1px solid black;
+  background-color: pink;
+}
+/* Regole contenuti */
+.text .col-1::before {
+  content: '1 col';
+}
+.text .col-2:before{
+  content: '2 col';
+}
+.text .col-6:before{
+  content: '6 col';
+}
+.text .col-8:before{
+  content: '8 col';
+}
+.text .col-12:before{
+  content: '12 col';
+}
+.padding {
+  padding: 5px;
+}
+/* regole nested */
+.nested [class*="col-"]{
+  background-color: red;
+  border: none;
+  border-left: 1px solid white;
+}
+.nested .col-2:before{
+  content: 'Nested 2 col';
+}
+.nested .col-6:before{
+  content: 'Nested 6 col';
+}
+.nested .col-8:before{
+  content: 'Nested 8 col';
+}

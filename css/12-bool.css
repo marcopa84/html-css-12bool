@@ -1,3 +1,11 @@
+/* regole DEGUB */
+.debug .container{
+  border: 2px solid pink;
+}
+
+.debug [class*="col-"]{
+  border: 2px solid red;
+}
 /* Reset iniziale */
 *{
 margin: 0;
